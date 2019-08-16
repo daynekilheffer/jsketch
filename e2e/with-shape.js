@@ -7,9 +7,6 @@ page.name = 'dayne 1'
 
 const desktopArtboard = new Artboard.Desktop()
 page.addLayer(desktopArtboard)
-const mobileArtboard = new Artboard.Mobile()
-mobileArtboard.x = desktopArtboard.width + 30
-page.addLayer(mobileArtboard)
 desktopArtboard.addLayer(new RawJSONLayer(
   {
     "_class": "rectangle",
