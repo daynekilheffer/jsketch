@@ -1,9 +1,10 @@
 import fs from 'fs'
-import { File, RawJSONLayer, Artboard } from '../lib'
+import { File, RawJSONLayer, Artboard, Page } from '../lib'
 
 const file = new File()
-const page = file.document.newPage()
+const page = new Page()
 page.name = 'royal purple'
+file.document.addPage(page)
 
 file.document.addColor({red: 92, green: 37, blue: 127}, 'dark purple')
 file.document.addColor({red: 214, green: 151, blue: 255}, 'light purple')

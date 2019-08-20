@@ -1,8 +1,8 @@
 import fs from 'fs'
-import { File } from '../lib'
+import { File, Page } from '../lib'
 
 const file = new File()
-file.document.newPage()
+file.document.addPage(new Page())
 
 
 file.toStream()

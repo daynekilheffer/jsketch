@@ -1,9 +1,10 @@
 import fs from 'fs'
-import { File, RawJSONLayer, Artboard } from '../lib'
+import { File, RawJSONLayer, Artboard, Page } from '../lib'
 
 const file = new File()
-const page = file.document.newPage()
+const page = new Page()
 page.name = 'shared text styles'
+file.document.addPage(page)
 
 file.document.addSharedTextStyle('sample-style', {
   "_class": "style",
