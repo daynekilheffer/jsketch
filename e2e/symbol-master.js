@@ -18,8 +18,8 @@ const symbolLayer = new RawJSONLayer(
       "constrainProportions": false,
       "height": 89,
       "width": 68,
-      "x": 154,
-      "y": 173
+      "x": 0,
+      "y": 0
     },
     "isFixedToViewport": false,
     "isFlippedHorizontal": false,
@@ -127,6 +127,8 @@ const symbolLayer = new RawJSONLayer(
 
 const symbol = new SymbolMaster()
 symbol.name = 'master my master'
+symbol.width = 68
+symbol.height = 89
 symbol.addLayer(symbolLayer)
 
 const instances = [
