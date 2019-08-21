@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { File, RawJSONLayer, Artboard, Page, SymbolMaster } from '../lib'
+import { File, RawJSONLayer, Artboard, Page, SymbolMaster, fileToZip } from '../lib'
 
 const symbolLayer = new RawJSONLayer(
   {
@@ -152,7 +152,7 @@ const file = new File()
 file.document.addPage(symbolPage)
 file.document.addPage(instPage)
 
-file.toStream()
+fileToZip(file)
   .pipe(fs.createWriteStream('symbol-master.sketch'))
   .on('finish', function () {
       console.log("sketch file written");

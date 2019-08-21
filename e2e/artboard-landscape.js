@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { File, RawJSONLayer, Artboard, Page } from '../lib'
+import { File, RawJSONLayer, Artboard, Page, fileToZip } from '../lib'
 
 const file = new File()
 const page = new Page()
@@ -13,7 +13,7 @@ page.addLayer(ab2)
 ab2.isLandscape = false
 ab2.x = ab1.width + 30
 
-file.toStream()
+fileToZip(file)
   .pipe(fs.createWriteStream('artboard-landscape.sketch'))
   .on('finish', function () {
       console.log("sketch file written");

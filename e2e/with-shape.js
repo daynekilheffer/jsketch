@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { File, RawJSONLayer, Artboard, Page } from '../lib'
+import { File, RawJSONLayer, Artboard, Page, fileToZip } from '../lib'
 
 const file = new File()
 const page = new Page()
@@ -133,7 +133,7 @@ desktopArtboard.addLayer(new RawJSONLayer(
   }))
 
 
-file.toStream()
+fileToZip(file)
   .pipe(fs.createWriteStream('with-shape.sketch'))
   .on('finish', function () {
       console.log("sketch file written");
