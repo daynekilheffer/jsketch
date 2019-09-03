@@ -1,5 +1,6 @@
 node_modules
 dist
+es
 .DS_Store
 *.sketch
 samples
