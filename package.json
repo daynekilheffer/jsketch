@@ -8,7 +8,7 @@
     "clean": "rm -r dist es",
     "build": "npx rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "e2e": "ls -1 e2e/* | xargs -I script npx babel-node script"
+    "e2e": "ls -1 e2e/*.js | xargs -I script npx babel-node script"
   },
   "keywords": [
     "sketch"
