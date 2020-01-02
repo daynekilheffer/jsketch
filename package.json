@@ -1,17 +1,17 @@
 {
   "name": "jsketch",
   "version": "1.0.0",
-  "description": "",
+  "description": "javascript to sketch file format",
   "main": "dist",
   "module": "es",
   "scripts": {
-    "clean": "rm -r dist",
+    "clean": "rm -r dist es",
     "build": "npx rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
     "e2e": "ls -1 e2e/* | xargs -I script npx babel-node script"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["sketch"],
+  "author": "dayne kilheffer <dayne.kilheffer@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "jszip": "^3.2.2"

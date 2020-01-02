@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { File, RawJSONLayer, Artboard, Page, SymbolMaster, fileToZip } from '../lib'
+import { File, RawJSONLayer, Page, SymbolMaster, fileToZip } from '../lib'
 
 const symbolLayer = new RawJSONLayer(
   {

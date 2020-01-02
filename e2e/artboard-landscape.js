@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { File, RawJSONLayer, Artboard, Page, fileToZip } from '../lib'
+import { File, Artboard, Page, fileToZip } from '../lib'
 
 const file = new File()
 const page = new Page()

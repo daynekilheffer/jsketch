@@ -1,3 +1,6 @@
+import babel from 'rollup-plugin-babel'
+import commonjs from 'rollup-plugin-commonjs'
+
 module.exports = [
   {
     input: 'lib/index.js',
@@ -9,8 +12,8 @@ module.exports = [
       'jszip'
     ],
     plugins: [
-      require('rollup-plugin-babel')(),
-      require('rollup-plugin-commonjs')()
+      babel(),
+      commonjs()
     ]
   },
   {
@@ -23,8 +26,8 @@ module.exports = [
       'jszip'
     ],
     plugins: [
-      require('rollup-plugin-babel')(),
-      require('rollup-plugin-commonjs')()
+      babel(),
+      commonjs()
     ]
   }
 ];
