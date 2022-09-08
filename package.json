@@ -16,7 +16,7 @@
   "author": "dayne kilheffer <dayne.kilheffer@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "jszip": "^3.2.2"
+    "jszip": "^3.7.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.7",
